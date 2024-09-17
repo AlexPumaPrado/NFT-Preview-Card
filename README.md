@@ -1,69 +1,86 @@
-# Make It Real - NFT preview card component
+# Make It Real - NFT Preview Card
 
-<img src="./design/desktop-preview.jpg" width="700">
+This is a solution to the NFT Preview Card project of the Make It Real course.
 
-## Reto
+## Table of contents
 
-Su desafío es construir este componente de tarjeta de vista previa y lograr que se parezca lo más posible al diseño.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
 
-Tus usuarios deberían poder:
+## Overview
 
-- Ver el diseño óptimo según el tamaño de pantalla de su dispositivo
-- Ver hover y focus para elementos interactivos
+### The challenge
 
-## Diseño
+Users should be able to: Users will be able to view a NFT Preview Card.
 
-Los diseños están en formato JPG estático. El uso de archivos JPG significará que deberá usar su mejor criterio para estilos como "tamaño de fuente", "padding" y "margen".
+- Version Mobile
+- Version Desktop
 
-### Style Guide
+### Screenshot
 
-Los diseños se crearon con los siguientes anchos:
+![FireShot Capture 005 - NFT Preview Card - ](https://github.com/user-attachments/assets/decedf50-0e5e-4c31-8c78-3d336e9636bc)
 
-- Mobile: 375px
-- Desktop: 1440px
+![FireShot Capture 006 - NFT Preview Card - Desktop](https://github.com/user-attachments/assets/de14bde8-724b-489b-a411-378f9723c1cb)
 
-## Colores
 
-### Primary
+## My process
 
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
+### Built with
 
-### Neutral
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
 
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+### What I learned
 
-## Tipografía
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-### Body Copy
+To see how you can add code snippets, see below:
 
-- Font size (paragraph): 18px
+```html
+ <div class="card-avatar">
+      <img src="images/image-avatar.png" alt="avatar" class="card-avatar-img">
+      <p class="card-name"> Creation of <a href="#">Alexander Puma</a></p>
+```
+```css
+.card-img::after {
+  content: url(../images/icon-view.svg);
+  background: var(--Soft-blue);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+```
 
-### Font
 
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
+### Continued development
 
-## Construyendo tu proyecto
+For future projects, I will focus on image optimization to ensure fast loading times. I'll also explore more about implementing CSS to improve the user experience.
 
-Siéntase libre de usar cualquier flujo de trabajo con el que se sienta cómodo. A continuación se sugiere un proceso, pero no sienta que necesita seguir estos pasos:
+### Useful resources
 
-1. Inicializa tu proyecto como repositorio público en [GitHub](https://github.com/). La creación de un repositorio hará que sea más fácil compartir su código con la comunidad si necesita ayuda. Si no está seguro de cómo hacer esto, [lea este recurso](https://guias.makeitreal.camp/git) .
-2. Mire los diseños para comenzar a planificar cómo abordará el proyecto. Este paso es crucial para ayudarlo a pensar con anticipación en las clases de CSS para crear estilos reutilizables.
-3. Antes de agregar estilos, estructura tu contenido con HTML. Escribir tu HTML primero puede ayudar a centrar tu atención en crear contenido bien estructurado.
-4. Escriba los estilos base para su proyecto, incluidos los estilos de contenido general, como `font-family` y `font-size`.
-5. Comience a agregar estilos en la parte superior de la página y siga hacia abajo. Pase a la siguiente sección solo cuando esté satisfecho de haber completado el área en la que está trabajando.
+- Markdown Guide
 
-## Crea un `README.md` personalizado
+## Author
 
-Recomendamos encarecidamente sobrescribir este `README.md` con uno personalizado. Proporcionamos una plantilla dentro del archivo [`README-template.md`](./README-template.md) en este código de inicio.
+- Alexander Puma Prado
+- Linkedin - [@AlexanderPuma](https://www.linkedin.com/in/alexander-puma-prado/)
 
-La plantilla proporciona una guía sobre qué agregar. Un `README` personalizado lo ayudará a explicar su proyecto y reflexionar sobre sus aprendizajes. Por favor, siéntete libre de editar nuestra plantilla tanto como quieras.
 
-**¡Diviértete construyendo!** 🚀
+## Acknowledgments
 
+I am grateful to the teachers of the project and the authors of the visual and written internet resources.
